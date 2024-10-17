@@ -22,7 +22,7 @@ $ skills
     }, 30);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [fullOutput]);
 
   return (
     <div className="font-mono text-sm md:text-base bg-black text-green-400 p-4 rounded-lg overflow-hidden relative">
