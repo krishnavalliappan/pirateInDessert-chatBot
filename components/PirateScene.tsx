@@ -4,7 +4,7 @@ import React, { useRef, useEffect, Suspense, useState } from "react";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { useGLTF, OrbitControls, Environment } from "@react-three/drei";
 import * as THREE from "three";
-import { Button } from "@/components/ui/button";
+import PulsatingButton from "@/components/ui/pulsating-button";
 
 interface PirateSceneProps {
   onButtonClick: () => void;
@@ -92,7 +92,7 @@ const PirateScene: React.FC<PirateSceneProps> = ({ onButtonClick }) => {
       </Canvas>
       {showButton && (
         <div className="absolute inset-x-0 bottom-[15%] flex justify-center">
-          <Button
+          <PulsatingButton
             onClick={onButtonClick}
             className="font-mono text-lg px-6 py-3 bg-black border border-green-500 text-green-400 rounded-md shadow-lg
                        transition-all duration-200 ease-in-out
@@ -103,7 +103,7 @@ const PirateScene: React.FC<PirateSceneProps> = ({ onButtonClick }) => {
             <span className="text-yellow-300">sudo</span>{" "}
             <span className="text-blue-300">join-pirate-crew</span>{" "}
             <span className="text-red-300">--yo-ho-ho</span>
-          </Button>
+          </PulsatingButton>
         </div>
       )}
     </div>

@@ -64,6 +64,8 @@ const config: Config = {
         "shimmer-slide":
           "shimmer-slide var(--speed) ease-in-out infinite alternate",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        pulse: "pulse var(--duration) ease-out infinite",
+        fadeIn: "fadeIn 0.5s ease-in",
       },
       keyframes: {
         "shimmer-slide": {
@@ -83,6 +85,14 @@ const config: Config = {
           },
           "100%": {
             transform: "translateZ(0) rotate(360deg)",
+          },
+        },
+        pulse: {
+          "0%, 100%": {
+            boxShadow: "0 0 0 0 var(--pulse-color)",
+          },
+          "50%": {
+            boxShadow: "0 0 0 8px var(--pulse-color)",
           },
         },
       },
