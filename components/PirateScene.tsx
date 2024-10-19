@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import React, { useRef, useEffect, Suspense, useState } from "react";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { useGLTF, OrbitControls, Environment } from "@react-three/drei";
@@ -59,6 +59,7 @@ const CameraTracker: React.FC<{ onProgress: (progress: number) => void }> = ({
 const PirateScene: React.FC<PirateSceneProps> = ({ onButtonClick }) => {
   const [maxZoomDistance, setMaxZoomDistance] = useState(7);
   const [showButton, setShowButton] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handlePirateModelClick = () => {
     setMaxZoomDistance(14);
@@ -91,7 +92,7 @@ const PirateScene: React.FC<PirateSceneProps> = ({ onButtonClick }) => {
         <CameraTracker onProgress={handleCameraProgress} />
       </Canvas>
       {showButton && (
-        <div className="absolute inset-x-0 bottom-[15%] flex justify-center">
+        <div className="absolute inset-x-0 bottom-[20%] flex justify-center">
           <PulsatingButton
             onClick={onButtonClick}
             className="font-mono text-lg px-6 py-3 bg-black border border-green-500 text-green-400 rounded-md shadow-lg
@@ -106,6 +107,30 @@ const PirateScene: React.FC<PirateSceneProps> = ({ onButtonClick }) => {
           </PulsatingButton>
         </div>
       )}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-full px-4 sm:w-auto">
+        <motion.div
+          className="relative bg-black bg-opacity-50 text-white px-3 py-2 sm:px-4 sm:py-2 rounded-full font-mono text-xs sm:text-sm cursor-help text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          onMouseEnter={() => setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+          onClick={() => setShowTooltip(!showTooltip)} // Toggle tooltip on click for mobile
+        >
+          Scroll to explore this pirate&apos;s paradise!
+          {showTooltip && (
+            <motion.div
+              className="absolute bottom-full transform -translate-x-1/2 mb-2 p-2 bg-white text-black rounded shadow-lg text-xs w-64 sm:w-96 text-center"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+            >
+              P.S. - Couldn&apos;t find desert pirates, so tropical island it
+              is!
+            </motion.div>
+          )}
+        </motion.div>
+      </div>
     </div>
   );
 };
