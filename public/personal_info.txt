@@ -1,0 +1,95 @@
+---
+
+**Name:** Krishnakumar Valliappan
+
+---
+
+**Summary:**
+
+- **Aspiring Full Stack Developer** transitioning from Data Analytics.
+- **2+ years** experience building automation tools and web applications using **Python** and **JavaScript**.
+- Passionate about solving real-world problems through code.
+- **Eager to work at 1851 Labs**, aligning with their builder mindset and startup culture.
+
+---
+
+**Passions and Interests:**
+
+- **Builder and Startup Mindset:** Thrives in fast-paced, dynamic environments with high ownership.
+- **Innovation and Learning:** Self-taught developer focused on project-based learning and new technologies.
+- **Efficiency and Automation:** Enthusiastic about automating tasks to enhance productivity.
+
+---
+
+**Professional Experience:**
+
+- **Junior Data Analyst at IA Flow Elements** (April 2020 – July 2022)
+  - **First company** in the tech industry.
+  - Streamlined processes using Agile methodologies.
+  - Developed automation scripts in Python, reducing manual effort significantly.
+  - Implemented machine learning models for sales forecasting.
+  - Created interactive web dashboards with JavaScript and Power BI.
+
+- **CAD Designer at IA Flow Elements** (June 2019 – March 2020)
+
+---
+
+**Projects:**
+
+1. **Interactive Digital Portfolio**
+   - **Technologies:** Next.js, TypeScript, Tailwind CSS, Framer Motion.
+   - Built a responsive portfolio website showcasing front-end skills.
+   - Deployed at **[www.krishnakumar.dev](http://www.krishnakumar.dev)**.
+
+2. **Real-Time Data Visualization Dashboard**
+   - **Technologies:** React, React-chartjs-2, Flask.
+   - Developed during a hackathon under tight deadlines.
+   - Created dynamic charts and graphs for data visualization.
+
+3. **Notion-TickTick Two-Way Sync Integration**
+   - **Technologies:** Python, Selenium, OpenAI, Notion API.
+   - Created a Python app for seamless synchronization between Notion and TickTick.
+   - Utilized OpenAI's models for intelligent task categorization.
+
+4. **LinkedIn Job Application Automation**
+   - **Technologies:** Python, Selenium, OpenAI, Notion API.
+   - Developed an AI-powered automation system for job applications.
+   - Scraped LinkedIn and synchronized data with Notion.
+   - Received positive feedback on GitHub.
+
+---
+
+**Technical Skills:**
+
+- **Languages:** Python, JavaScript, TypeScript, SQL, Bash.
+- **Frameworks & Tools:** ReactJS, Next.js, NodeJS, ExpressJS, Django, Flask, Tailwind CSS, shadcn/ui, Selenium, Framer Motion.
+- **Other Skills:** REST API Development, Git, Docker, AWS, Agile methodologies.
+
+---
+
+**Education:**
+
+- **Master of Engineering**, Mechanical Engineering  
+  *Concordia University, Montreal* (2022 - 2024)
+
+- **Bachelor of Engineering**, Production Engineering  
+  *Concordia University, Montreal* (2015 - 2019)
+
+---
+
+**Alignment with 1851 Labs:**
+
+- **Eager to work at 1851 Labs**, a stealth consumer AI startup.
+- Aligns with their mission to build innovative consumer apps leveraging AI.
+- Shares their emphasis on a builder mindset, high ownership, and fast-paced development.
+- Excited about contributing to projects targeting millions of users.
+
+---
+
+**Approach to Learning:**
+
+- **Project-Based Learning:** Tackles real-life challenges to learn new technologies.
+- Avoids endless tutorials by diving into documentation and hands-on projects.
+- Employs productivity methods like the Second Brain concept and PARA method.
+
+---

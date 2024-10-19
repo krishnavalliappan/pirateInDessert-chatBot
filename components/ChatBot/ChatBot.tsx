@@ -4,6 +4,7 @@ import { UserMessage } from "./UserMessage";
 import PredefinedQuestions from "./PredefinedQuestions";
 import { ChatInput } from "./ChatInput";
 import { useBotChat } from "@/hooks/useBotChat";
+import DOMPurify from "dompurify";
 
 interface Message {
   role: "bot" | "user";
@@ -56,7 +57,7 @@ const ChatBot: React.FC = () => {
   };
 
   return (
-    <div className="bg-background rounded-lg shadow-lg flex flex-col h-[600px] max-w-2xl w-full mx-auto overflow-hidden border border-border">
+    <div className="bg-background rounded-lg shadow-lg flex flex-col h-[600px] w-full max-w-5xl mx-auto overflow-hidden border border-border">
       <div className="bg-primary text-primary-foreground p-4 font-bold text-lg flex justify-between items-center">
         <span>Chat with Pirate Dev</span>
         {inputEnabled && (
@@ -71,14 +72,12 @@ const ChatBot: React.FC = () => {
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.map((msg, index) =>
           msg.role === "bot" ? (
-            <BotMessage key={index} content={msg.content} />
+            <BotMessage key={index} content={DOMPurify.sanitize(msg.content)} />
           ) : (
             <UserMessage key={index} content={msg.content} />
           ),
         )}
-        {isLoading && (
-          <div className="text-center">Thinkin&apos; like a pirate...</div>
-        )}
+        {isLoading && <div className="text-center">Thinking...</div>}
         {error && <div className="text-red-500 text-center">{error}</div>}
         <div ref={messagesEndRef} />
       </div>
