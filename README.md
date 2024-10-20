@@ -7,6 +7,9 @@ A creative and interactive web application showcasing a pirate-themed chatbot wi
 - [https://website-joining-pirate-crew.vercel.app/](https://website-joining-pirate-crew.vercel.app/)
 - [Refer Detailed Documenation about this porject](https://krishna98.notion.site/My-Pirate-Themed-ChatBot-App-Brief-Documenation-125d2e8e605280a7b8fdd5ec90b3ac10?pvs=4)
 
+## Demo Video
+https://github.com/user-attachments/assets/f7e65d13-eb5f-4890-ac6f-18b6a82b7a55
+
 ## Project Overview
 
 This project is a pirate-themed chatbot application that combines modern web technologies with AI capabilities. It was inspired by 1851 Labs' mission statement: "We're pirates in the desert, help us build the foundation of the next big consumer app."
