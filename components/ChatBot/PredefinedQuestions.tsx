@@ -11,12 +11,12 @@ const PredefinedQuestions: React.FC<Props> = ({
   onQuestionClick,
   onChatMoreClick,
 }) => (
-  <div className="space-y-2 sm:space-y-3">
+  <div className="space-y-2">
     {predefinedQA.map((qa, index) => (
       <motion.button
         key={index}
         onClick={() => onQuestionClick(qa.question, qa.answer)}
-        className="w-full py-2 sm:py-3 px-4 sm:px-6 bg-background text-foreground rounded-full border border-primary/50 transition-colors duration-300 text-left relative overflow-hidden group text-sm sm:text-base"
+        className="w-full py-2 px-3 bg-background text-foreground rounded-full border border-primary/50 transition-colors duration-300 text-left relative overflow-hidden group text-xs sm:text-sm"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
@@ -31,11 +31,11 @@ const PredefinedQuestions: React.FC<Props> = ({
     ))}
     <motion.button
       onClick={onChatMoreClick}
-      className="w-full py-2 sm:py-3 px-4 sm:px-6 bg-primary text-primary-foreground rounded-full border border-primary transition-colors duration-300 font-medium mt-2 sm:mt-4 text-sm sm:text-base"
+      className="w-full py-2 px-3 bg-primary text-primary-foreground rounded-full border border-primary transition-colors duration-300 font-medium mt-2 text-xs sm:text-sm"
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
-      Chat more to know more about me...
+      Chat more to uncover hidden treasures...
     </motion.button>
   </div>
 );

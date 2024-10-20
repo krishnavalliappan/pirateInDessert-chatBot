@@ -8,7 +8,6 @@ const openai = new OpenAI({
 });
 
 let personalInfo: string | null = null;
-let messageCount = 0;
 
 async function loadPersonalInfo() {
   if (personalInfo === null) {
@@ -24,11 +23,7 @@ export async function POST(request: Request) {
 
   try {
     // Reload personal info every 10 messages or if it's not loaded
-    if (messageCount % 10 === 0 || personalInfo === null) {
-      await loadPersonalInfo();
-      messageCount = 0;
-    }
-    messageCount++;
+    await loadPersonalInfo();
 
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",

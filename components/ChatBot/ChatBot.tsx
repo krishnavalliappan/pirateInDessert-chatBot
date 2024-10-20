@@ -5,6 +5,8 @@ import PredefinedQuestions from "./PredefinedQuestions";
 import { ChatInput } from "./ChatInput";
 import { useBotChat } from "@/hooks/useBotChat";
 import DOMPurify from "dompurify";
+// import { FaComments } from "react-icons/fa";
+import Image from "next/image";
 
 interface Message {
   role: "bot" | "user";
@@ -16,7 +18,7 @@ const ChatBot: React.FC = () => {
     {
       role: "bot",
       content:
-        "Ahoy! What would ye like to know about this seafarin' developer?",
+        "Ahoy! What would you like to know about this tech-savvy developer?",
     },
   ]);
   const [inputEnabled, setInputEnabled] = useState(false);
@@ -57,13 +59,24 @@ const ChatBot: React.FC = () => {
   };
 
   return (
-    <div className="bg-background rounded-lg shadow-lg flex flex-col h-[600px] w-full max-w-5xl mx-auto overflow-hidden border border-border">
-      <div className="bg-primary text-primary-foreground p-4 font-bold text-lg flex justify-between items-center">
-        <span>Chat with Pirate Dev</span>
+    <div className="bg-background rounded-lg shadow-lg flex flex-col h-[550px] w-full max-w-4xl mx-auto overflow-hidden border border-border">
+      <div className="bg-primary text-primary-foreground p-3 font-bold text-base flex justify-between items-center">
+        <div className="flex items-center justify-center mb-2">
+          <h2 className="text-lg sm:text-xl font-bold">
+            Chat with the Desert Pirate Bot
+          </h2>
+          <Image
+            src="/pirate_parrot.png"
+            alt="Pirate Parrot"
+            width={48}
+            height={48}
+            className="mr-2"
+          />
+        </div>
         {inputEnabled && (
           <button
             onClick={handleReset}
-            className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm hover:bg-accent transition duration-300"
+            className="bg-secondary text-secondary-foreground px-2 py-1 rounded-full text-xs hover:bg-accent transition duration-300"
           >
             Reset
           </button>

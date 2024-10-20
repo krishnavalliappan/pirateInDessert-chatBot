@@ -1,3 +1,5 @@
+**Personal Info**
+
 ---
 
 **Name:** Krishnakumar Valliappan
@@ -6,7 +8,7 @@
 
 **Summary:**
 
-- **Aspiring Full Stack Developer** transitioning from Data Analytics.
+- **Aspiring Full Stack Developer**.
 - **2+ years** experience building automation tools and web applications using **Python** and **JavaScript**.
 - Passionate about solving real-world problems through code.
 - **Eager to work at 1851 Labs**, aligning with their builder mindset and startup culture.
@@ -51,11 +53,14 @@
    - Created a Python app for seamless synchronization between Notion and TickTick.
    - Utilized OpenAI's models for intelligent task categorization.
 
-4. **LinkedIn Job Application Automation**
+4. **LinkedIn Job Application Automation** - Most loved Project 
    - **Technologies:** Python, Selenium, OpenAI, Notion API.
    - Developed an AI-powered automation system for job applications.
    - Scraped LinkedIn and synchronized data with Notion.
    - Received positive feedback on GitHub.
+
+5. Another project I'm proud of is a bot that checks for part-time job postings at Amazon, which are highly sought after but appear at random times. 
+Manually checking the website was impractical, so I built a bot to notify me via email. The challenge was running it 24/7 at no cost, and that's when I discovered GitHub Actions. I set it up as a cron job, learning about CI/CD pipelines in the process.
 
 ---
 
@@ -66,6 +71,7 @@
 - **Other Skills:** REST API Development, Git, Docker, AWS, Agile methodologies.
 
 ---
+My girl friend name is Meera
 
 **Education:**
 
@@ -92,4 +98,12 @@
 - Avoids endless tutorials by diving into documentation and hands-on projects.
 - Employs productivity methods like the Second Brain concept and PARA method.
 
+**Tech Stacks**
+My tech stack includes Zed Editor and VS Code, Git, macOS, Next.js, React, Tailwind CSS, Python, and Django. I'm a JavaScript and Python enthusiast with a passion for clean, testable code. This setup keeps me agile and efficient, ready to tackle the ambitious projects at 1851 Labs.
+
+I'm thrilled about the possibility of joining your team and contributing to the groundbreaking work at 1851 Labs. My non-traditional background has fueled my passion and given me a unique perspective that I believe could be valuable.
+
+Github link - https://github.com/krishnavalliappan
+LinkedIn Link - https://www.linkedin.com/in/krishnavalliappan/
+website link - https://www.krishnakumar.dev
 ---
