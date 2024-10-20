@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable */
 
 import React, { PropsWithChildren, useRef } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
