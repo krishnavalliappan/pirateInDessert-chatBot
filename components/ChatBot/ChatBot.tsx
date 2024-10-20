@@ -60,9 +60,9 @@ const ChatBot: React.FC = () => {
 
   return (
     <div className="bg-background rounded-lg shadow-lg flex flex-col h-full w-full max-w-4xl mx-auto overflow-hidden border border-border">
-      <div className="bg-primary text-primary-foreground p-1 font-bold text-base flex justify-between items-center">
+      <div className="bg-primary text-primary-foreground p-1 font-bold text-xs sm:text-sm flex justify-between items-center">
         <div className="flex items-center justify-center">
-          <h2 className="text-lg sm:text-xl font-bold">
+          <h2 className="text-base sm:text-lg font-bold">
             Chat with the Desert Pirate Bot
           </h2>
           <Image
@@ -82,7 +82,7 @@ const ChatBot: React.FC = () => {
           </button>
         )}
       </div>
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4 text-xs sm:text-sm">
         {messages.map((msg, index) =>
           msg.role === "bot" ? (
             <BotMessage key={index} content={DOMPurify.sanitize(msg.content)} />
