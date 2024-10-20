@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative h-screen">
       {!showContent && <PirateScene onButtonClick={handleButtonClick} />}
       {showContent && (
         <div className="w-full">

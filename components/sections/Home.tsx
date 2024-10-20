@@ -33,7 +33,7 @@ const Home = () => {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setShowTooltip(false);
-    }, 300); // 300ms delay before hiding the tooltip
+    }, 300);
   };
 
   useEffect(() => {
@@ -53,9 +53,9 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="relative min-h-screen w-full overflow-hidden flex flex-col items-center justify-between bg-white">
-      <DotPattern className="h-screen opacity-20" />
-      <div className="container mx-auto px-4 py-8 pb-20 sm:pb-24 relative z-10 flex flex-col items-center">
+    <main className="relative h-screen w-full overflow-hidden flex flex-col items-center justify-between bg-white">
+      <DotPattern className="absolute inset-0 opacity-20" />
+      <div className="container mx-auto px-4 py-4 sm:py-8 relative z-10 flex flex-col items-center">
         <BoxReveal duration={0.5}>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4 text-center text-gray-800">
             Ahoy, I&apos;m Krishnakumar!
@@ -68,7 +68,7 @@ const Home = () => {
           </p>
         </BoxReveal>
         <BoxReveal duration={0.9}>
-          <div className="w-full max-w-3xl bg-gray-50 rounded-lg shadow-lg p-4 relative">
+          <div className="w-full max-w-3xl bg-gray-50 rounded-lg shadow-lg p-2 sm:p-4 relative mb-2 md:mb-10 flex flex-col h-[calc(100vh-300px)] sm:h-[calc(100vh-220px)]">
             <div className="text-center mb-4 relative">
               <div className="absolute top-0 right-0">
                 <div className="relative">
@@ -118,21 +118,22 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
+              className="flex-grow overflow-hidden"
             >
               <ChatBot />
             </motion.div>
           </div>
         </BoxReveal>
       </div>
-      <Dock className="fixed bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-gray-100/80 backdrop-blur-lg p-2 rounded-full shadow-lg">
+      <Dock className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-100/80 backdrop-blur-lg rounded-full shadow-lg px-2 py-1 flex justify-center items-end">
         <DockIcon>
           <Link
             href="https://github.com/krishnavalliappan"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors duration-300"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors duration-300"
           >
-            <FaGithub className="text-xl" />
+            <FaGithub className="text-lg sm:text-xl" />
           </Link>
         </DockIcon>
         <DockIcon>
@@ -140,9 +141,9 @@ const Home = () => {
             href="https://www.linkedin.com/in/krishnavalliappan/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-colors duration-300"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-colors duration-300"
           >
-            <FaLinkedin className="text-xl" />
+            <FaLinkedin className="text-lg sm:text-xl" />
           </Link>
         </DockIcon>
         <DockIcon>
@@ -150,9 +151,9 @@ const Home = () => {
             href="https://www.krishnakumar.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-600 text-white hover:bg-amber-500 transition-colors duration-300"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-amber-600 text-white hover:bg-amber-500 transition-colors duration-300"
           >
-            <FaGlobe className="text-xl" />
+            <FaGlobe className="text-lg sm:text-xl" />
           </Link>
         </DockIcon>
         <DockIcon>
@@ -160,9 +161,9 @@ const Home = () => {
             href="https://krishna98.notion.site/My-Pirate-Themed-ChatBot-App-Brief-Documenation-125d2e8e605280a7b8fdd5ec90b3ac10?pvs=4"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-white hover:bg-emerald-500 transition-colors duration-300"
+            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-emerald-600 text-white hover:bg-emerald-500 transition-colors duration-300"
           >
-            <FaBookDead className="text-xl" />
+            <FaBookDead className="text-lg sm:text-xl" />
           </Link>
         </DockIcon>
       </Dock>

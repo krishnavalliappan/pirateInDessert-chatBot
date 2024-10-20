@@ -59,9 +59,9 @@ const ChatBot: React.FC = () => {
   };
 
   return (
-    <div className="bg-background rounded-lg shadow-lg flex flex-col h-[550px] w-full max-w-4xl mx-auto overflow-hidden border border-border">
-      <div className="bg-primary text-primary-foreground p-3 font-bold text-base flex justify-between items-center">
-        <div className="flex items-center justify-center mb-2">
+    <div className="bg-background rounded-lg shadow-lg flex flex-col h-full w-full max-w-4xl mx-auto overflow-hidden border border-border">
+      <div className="bg-primary text-primary-foreground p-1 font-bold text-base flex justify-between items-center">
+        <div className="flex items-center justify-center">
           <h2 className="text-lg sm:text-xl font-bold">
             Chat with the Desert Pirate Bot
           </h2>
