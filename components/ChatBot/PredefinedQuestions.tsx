@@ -16,7 +16,7 @@ const PredefinedQuestions: React.FC<Props> = ({
       <motion.button
         key={index}
         onClick={() => onQuestionClick(qa.question, qa.answer)}
-        className="w-full py-2 px-3 bg-background text-foreground rounded-full border border-primary/50 transition-colors duration-300 text-left relative overflow-hidden group text-xs sm:text-sm"
+        className="w-full py-1 px-3 bg-background text-foreground rounded-full border border-primary/50 transition-colors duration-300 text-left relative overflow-hidden group text-xs sm:text-sm"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
